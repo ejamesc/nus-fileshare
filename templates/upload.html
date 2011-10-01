@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Fileshare@NUS</title>
+</head>
+
+<body>
+	<h1>Fileshare@NUS</h1>
+	<h2>Upload new File</h2>
+	    <form action="/" method=post enctype=multipart/form-data>
+	      <p><input type=file name=file>
+	         <input type=submit value=Upload>
+	    </form>
+
+
+{% if filename %}
+{{ filename }}
+{% endif %}
+</body>
+</html>
