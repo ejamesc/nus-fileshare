@@ -5,9 +5,7 @@ from flask import (
     request,
     redirect,
     url_for,
-    g,
     render_template,
-    request
 )
 from werkzeug import secure_filename
 
