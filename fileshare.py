@@ -27,7 +27,7 @@ def create_upload_folder(now):
     This is for later use of a cron job to delete folders after a set interval
     """
     newpath = os.path.join(app.config['UPLOAD_FOLDER'],
-                        "%s-%s-%s/" % (now.year, now.month, now.day))
+                        now.strftime("%Y-%m-%d"))
     if not os.path.exists(newpath): os.makedirs(newpath)
     return newpath
 
